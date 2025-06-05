@@ -1,0 +1,54 @@
+name: Deploy Website and Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main # Or your publishing branch (where your Webflow files are)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed for sitemap commit
+      pages: write    # Needed for GitHub Pages deployment
+      id-token: write # Needed for GitHub Pages deployment
+
+    environment: # Optional but recommended for Pages deployments
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed for sitemap lastmod dates
+
+      # --- Step 1: Generate Sitemap (as before) ---
+      - name: Generate Sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: 'https://fajardoelite.com/' # IMPORTANT: REPLACE THIS
+          path-to-root: '.' # Or your Webflow export folder if it's not root
+
+      - name: Commit and Push Sitemap
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'sitemap.xml'
+          message: 'Docs: Auto-generated sitemap.xml'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Step 2: Set up GitHub Pages (required for `upload-pages-artifact`) ---
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # --- Step 3: Upload your Webflow exported files as an artifact ---
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Your Webflow files are likely in the root, or specify a subfolder
+          path: './' # This tells it to upload everything in the current directory
+
+      # --- Step 4: Deploy the artifact to GitHub Pages ---
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
