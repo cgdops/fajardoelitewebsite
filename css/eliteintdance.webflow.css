@@ -4878,6 +4878,10 @@
   object-position: 80% 50%;
 }
 
+.image.cover-image.private-lesson {
+  object-position: 10% 50%;
+}
+
 .utility-radius-top-0 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -5523,6 +5527,10 @@ li {
   display: none;
 }
 
+.image-2 {
+  width: 250px;
+}
+
 @media screen and (max-width: 991px) {
   .container.small-container {
     width: 90%;
@@ -5582,6 +5590,10 @@ li {
   .grid-layout.styles {
     grid-column-gap: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1743169731998---spacing--1x);
     grid-row-gap: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1743169731998---spacing--1x);
+  }
+
+  .grid-layout.styles.utility-margin-top-2rem {
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-layout.contact {
@@ -6417,7 +6429,7 @@ li {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-layout.mobile-portrait-1-column, .grid-layout.instructors {
+  .grid-layout.mobile-portrait-1-column, .grid-layout.instructors, .grid-layout.styles.utility-margin-top-2rem {
     grid-template-columns: 1fr;
   }
 
