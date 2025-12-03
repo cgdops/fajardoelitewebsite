@@ -6269,6 +6269,10 @@ li {
   box-shadow: 0 2px 20px #00000026;
 }
 
+.form-code {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .container.small-container {
     width: 90%;
