@@ -6079,7 +6079,7 @@ li {
 }
 
 .hero-section-content.step-3 {
-  display: none;
+  display: block;
 }
 
 .spacer {
@@ -6241,6 +6241,13 @@ li {
   border-radius: 4px;
   height: 3.4rem;
   padding: 1rem;
+}
+
+.text-field.business-email {
+  z-index: -100;
+  opacity: 0;
+  height: 0;
+  position: absolute;
 }
 
 .success-message {
