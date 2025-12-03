@@ -6079,7 +6079,7 @@ li {
 }
 
 .hero-section-content.step-3 {
-  display: block;
+  display: none;
 }
 
 .spacer {
@@ -6276,7 +6276,7 @@ li {
   box-shadow: 0 2px 20px #00000026;
 }
 
-.form-code {
+.form-code, .l2-spam-protection {
   display: none;
 }
 
