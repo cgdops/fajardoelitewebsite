@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Dec 04 2025 02:50:39 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Dec 04 2025 02:59:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="692f93d7570f01684d213bec" data-wf-site="67e6a8c0da47dc3fa53a9674" lang="es">
 <head>
   <meta charset="utf-8">
@@ -155,10 +155,14 @@ const form = document.getElementById('wf-form-fe_lead_form'); // Ensure your for
 const submitBtn = form.querySelector('input[type="submit"]');
 form.addEventListener('submit', function(e) {
     e.preventDefault(); // Stop the page from reloading
+    e.stopImmediatePropagation();
     // 2. Change Button Text to "Sending..."
     const originalBtnText = submitBtn.value;
     submitBtn.value = "Sending...";
     submitBtn.disabled = true;
+    // Force hide error message
+    const errorMsg = form.parentElement.querySelector('.w-form-fail');
+    if (errorMsg) errorMsg.style.display = 'none';
     // 3. Gather the data
     const formData = new FormData(form);
     const data = {};
@@ -189,6 +193,8 @@ form.addEventListener('submit', function(e) {
             // Find the success message div (usually .w-form-done) and show it
             const successMsg = form.parentElement.querySelector('.w-form-done');
             if (successMsg) successMsg.style.display = 'block';
+            // Ensure error message is hidden
+            if (errorMsg) errorMsg.style.display = 'none';
             // Trigger Google Ads Tracking
             triggerGoogleAdsConversion();
         } else {
