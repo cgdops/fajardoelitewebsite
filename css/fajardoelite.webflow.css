@@ -7433,6 +7433,77 @@ li {
   .landing-page-nav-cta-wrapper {
     padding-right: 0;
   }
+
+  .landing-nav-cta-button {
+    background-color: #ee334d;
+    transition: background-color .2s;
+  }
+
+  .landing-nav-cta-button:hover {
+    background-color: #fc415b;
+  }
+
+  .hero-section-content.step-2 {
+    display: none;
+  }
+
+  .landing-eyebrow {
+    color: #ee334d;
+  }
+
+  .radio-card {
+    max-width: 50%;
+    padding: 0;
+  }
+
+  .trigger-button {
+    background-color: #ee334d;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+  }
+
+  .trigger-button:hover {
+    background-color: #fd425c;
+  }
+
+  .container-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .radio-button-label-2 {
+    padding: 7px 10px;
+  }
+
+  .radio-image-wrap {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .instructor-section-wrap {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .instructor-section-layout {
+    grid-column-gap: 1.4rem;
+    grid-row-gap: 1.4rem;
+    flex-flow: column;
+    display: flex;
+  }
+
+  .instructor-wrap {
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px #0003;
+  }
+
+  .instructor-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 #w-node-b48c1759-22dd-03a7-a190-476bce33ba79-a53a967d {
