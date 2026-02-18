@@ -35,7 +35,6 @@ jobs:
         with:
           add: 'sitemap.xml'
           message: 'Docs: Auto-generated sitemap.xml'
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       # --- Step 2: Set up GitHub Pages (required for `upload-pages-artifact`) ---
       - name: Setup Pages
