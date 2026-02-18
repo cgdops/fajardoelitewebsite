@@ -6331,6 +6331,10 @@ li {
   margin-right: auto;
 }
 
+.link-block.sale.hide {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .container.small-container {
     width: 90%;
