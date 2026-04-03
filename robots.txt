@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fajardoelite.com/sitemap.xml
