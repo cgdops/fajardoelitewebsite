@@ -417,6 +417,7 @@
 }
 
 .container {
+  padding: 2.6rem;
   max-width: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1743169731998---container--container-width);
   padding-right: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1743169731998---container--container-padding-horizontal);
   padding-left: var(--ai-gen-82921b10-4b39-48f0-b346-808cf4903d29-1743169731998---container--container-padding-horizontal);
