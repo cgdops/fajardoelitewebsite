@@ -40,11 +40,11 @@
       "start": "19:00",
       "end": "20:00",
       "name": "Back to Basics",
-      "style": "ballroom",
-      "level": "Ballroom",
+      "style": "smooth",
+      "level": "Foundation Technique",
       "is_team": false,
       "open_to_drop_in": true,
-      "url": "/ballroom-dance-classes-davie"
+      "url": "/schedule.html"
     },
     {
       "id": "tue-2000-bachata",
