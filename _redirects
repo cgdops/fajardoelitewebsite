@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects (effective post-DNS-cutover)
+# Format: <source> <destination> <status>
+
+# Promo consolidation — collapse parallel offer pages onto /pricing
+/intro-offer.html         /pricing.html#intro      301
+/holiday-sales-2025.html  /pricing.html            301
+
+# Legacy Webflow template artifact — not linked anywhere
+/static-template-slug-1748802036035.html  /  301

@@ -1,0 +1,159 @@
+{
+  "schedule_id": "2026-q2-may",
+  "effective_from": "2026-05-06",
+  "effective_to": null,
+  "timezone": "America/New_York",
+  "address": "6692 Stirling Rd, Davie, FL 33024",
+  "source": "2026 Class, Team & Pricing Guide (image, extracted 2026-05-05)",
+  "notes": [
+    "★ denotes Team class — by audition only, not open to drop-in",
+    "Saturday afternoon includes Open Floor for practice"
+  ],
+  "classes": [
+    {
+      "id": "mon-1900-beg-salsa-team",
+      "day": "monday",
+      "start": "19:00",
+      "end": "20:00",
+      "name": "Beg. Salsa",
+      "style": "salsa",
+      "level": "Ladies Team",
+      "is_team": true,
+      "open_to_drop_in": false,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "mon-2000-salsa-on-1",
+      "day": "monday",
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Salsa On 1",
+      "style": "salsa",
+      "level": "Levels 1 & 2",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "tue-1900-back-to-basics",
+      "day": "tuesday",
+      "start": "19:00",
+      "end": "20:00",
+      "name": "Back to Basics",
+      "style": "smooth",
+      "level": "Foundation Technique",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/schedule.html"
+    },
+    {
+      "id": "tue-2000-bachata",
+      "day": "tuesday",
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Bachata",
+      "style": "bachata",
+      "level": "All Levels",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/bachata-classes-davie"
+    },
+    {
+      "id": "wed-1900-salsa-on-1-adv",
+      "day": "wednesday",
+      "start": "19:00",
+      "end": "20:00",
+      "name": "Salsa On 1",
+      "style": "salsa",
+      "level": "Adv. Beg. Lvl 2 & 3",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "wed-2000-salsa-on-1-all",
+      "day": "wednesday",
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Salsa On 1",
+      "style": "salsa",
+      "level": "All Levels",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "thu-1900-bachata",
+      "day": "thursday",
+      "start": "19:00",
+      "end": "20:00",
+      "name": "Bachata",
+      "style": "bachata",
+      "level": "All Levels",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/bachata-classes-davie"
+    },
+    {
+      "id": "thu-2000-latin-hustle",
+      "day": "thursday",
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Latin Hustle",
+      "style": "hustle",
+      "level": "All Levels",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/schedule"
+    },
+    {
+      "id": "fri-1900-salsa-on-2",
+      "day": "friday",
+      "start": "19:00",
+      "end": "20:00",
+      "name": "Salsa On 2",
+      "style": "salsa",
+      "level": "Intro to Basics",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "fri-2000-beg-salsa-team",
+      "day": "friday",
+      "start": "20:00",
+      "end": "21:00",
+      "name": "Beg. Salsa",
+      "style": "salsa",
+      "level": "Ladies Team",
+      "is_team": true,
+      "open_to_drop_in": false,
+      "url": "/salsa-classes-broward"
+    },
+    {
+      "id": "sat-1000-latin-rhythms",
+      "day": "saturday",
+      "start": "10:00",
+      "end": "11:00",
+      "name": "Latin Rhythms",
+      "style": "latin",
+      "level": "Salsa · Bachata · Merengue",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "url": "/schedule"
+    },
+    {
+      "id": "sat-1100-open-floor",
+      "day": "saturday",
+      "start": "11:00",
+      "end": "13:00",
+      "name": "Open Floor",
+      "style": "practice",
+      "level": "Practice Time",
+      "is_team": false,
+      "open_to_drop_in": true,
+      "is_practice": true,
+      "url": "/schedule"
+    }
+  ]
+}
