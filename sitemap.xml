@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://fajardoelite.com/</loc>
-<lastmod>2026-04-08T16:48:48-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/about.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/contact.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/holiday-sales-2025.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/intro-offer.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/private-lessons.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/static-template-slug-1748802036035.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/style-guide.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/thank-you.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
-<url>
-<loc>https://fajardoelite.com/wedding-dance-lessons.html</loc>
-<lastmod>2026-04-03T11:41:29-04:00</lastmod>
-</url>
+  <url>
+    <loc>https://fajardoelite.com/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/schedule.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/pricing.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/private-lessons.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/wedding-dance-lessons.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/about.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fajardoelite.com/contact.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

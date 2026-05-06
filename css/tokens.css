@@ -1,0 +1,96 @@
+/* Fajardo Elite — Design Tokens
+   Burgundy / Gold / Cream palette derived from the 2026
+   Class, Team & Pricing Guide. Indigo variant preserved
+   in tokens.indigo.css for reference. */
+
+:root {
+  /* ----- Brand palette ----- */
+  --color-accent: #8B0F1F;          /* deep burgundy — primary brand */
+  --color-accent-hover: #A11829;    /* lighter burgundy on hover */
+  --color-accent-deep: #6E0C19;     /* darker burgundy for pressed/active */
+  --color-gold: #C99B5A;            /* warm gold accent */
+  --color-gold-deep: #A57E3F;       /* darker gold for hover/contrast */
+  --color-accent-pale: var(--color-gold); /* legacy alias for components written against the indigo palette */
+
+  /* ----- Surface palette (light theme) ----- */
+  --color-bg: #FBF6EE;              /* cream page background */
+  --color-bg-elev: #F5EFE0;         /* slightly warmer cream for alt sections */
+  --color-surface: #FFFFFF;         /* card surface */
+  --color-surface-warm: #FFFCF5;    /* card surface with warmth */
+  --color-surface-dark: #1F1F1F;    /* charcoal — premium tier cards */
+  --color-surface-dark-elev: #2B2B2B;
+
+  /* ----- Text ----- */
+  --color-text: #1A1A1A;            /* near-black body */
+  --color-text-muted: #4A4A4A;      /* secondary text */
+  --color-text-subtle: #7A7A7A;     /* tertiary / metadata */
+  --color-text-on-dark: #FBF6EE;    /* cream text on dark surfaces */
+  --color-text-on-accent: #FBF6EE;  /* cream text on burgundy */
+
+  /* ----- Borders ----- */
+  --color-border: #E5DCC4;          /* parchment border on cream */
+  --color-border-strong: #C5B89A;   /* heavier parchment */
+  --color-border-dark: #3A3A3A;     /* border on dark surfaces */
+
+  /* ----- Typography ----- */
+  --font-body: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-script: 'Pinyon Script', 'Brush Script MT', cursive;
+
+  /* ----- Type scale (fluid) ----- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 0.8vw, 2rem);
+  --text-3xl: clamp(2rem, 1.6rem + 1.5vw, 2.75rem);
+  --text-4xl: clamp(2.5rem, 1.8rem + 3vw, 4rem);
+  --text-5xl: clamp(3rem, 2rem + 5vw, 5.5rem);
+
+  /* Display sizes for prices, large numerics */
+  --text-price: clamp(2.5rem, 1.5rem + 4vw, 4rem);
+
+  /* ----- Line heights ----- */
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-base: 1.55;
+  --lh-relaxed: 1.7;
+
+  /* ----- Spacing ----- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+
+  /* ----- Radii ----- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ----- Shadows (softer, suited to cream bg) ----- */
+  --shadow-sm: 0 1px 2px rgba(31, 31, 31, 0.06);
+  --shadow-md: 0 4px 16px rgba(31, 31, 31, 0.08);
+  --shadow-lg: 0 16px 48px rgba(31, 31, 31, 0.12);
+  --shadow-glow: 0 0 32px rgba(139, 15, 31, 0.18);
+
+  /* ----- Layout ----- */
+  --container-max: 1200px;
+  --container-padding: 1.5rem;
+  --header-height: 72px;
+
+  /* ----- Motion ----- */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+}
