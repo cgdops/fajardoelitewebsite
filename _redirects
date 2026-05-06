@@ -2,8 +2,27 @@
 # Format: <source> <destination> <status>
 
 # Promo consolidation — collapse parallel offer pages onto /pricing
-/intro-offer.html         /pricing.html#intro      301
-/holiday-sales-2025.html  /pricing.html            301
+/intro-offer.html         /pricing.html       301
+/holiday-sales-2025.html  /pricing.html       301
 
-# Legacy Webflow template artifact — not linked anywhere
+# Webflow artifacts — never linked anywhere
 /static-template-slug-1748802036035.html  /  301
+/style-guide.html                          /  301
+
+# SEO target URLs that don't have dedicated pages yet — route to schedule
+# (302 because we plan to build these as money pages in Phase 2)
+/salsa-classes-broward         /schedule.html              302
+/bachata-classes-davie         /schedule.html              302
+/ballroom-dance-classes-davie  /schedule.html              302
+
+# Alternative wedding-dance URL (planned SEO-friendly variant)
+/wedding-dance-lessons-broward /wedding-dance-lessons.html 301
+
+# Optional: pretty URLs (no .html extension) → canonical pages
+# (Cloudflare Pages handles this automatically by default; explicit fallback)
+/schedule         /schedule.html         301
+/pricing          /pricing.html          301
+/private-lessons  /private-lessons.html  301
+/wedding-dance-lessons /wedding-dance-lessons.html 301
+/about            /about.html            301
+/contact          /contact.html          301
