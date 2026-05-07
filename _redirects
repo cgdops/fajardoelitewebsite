@@ -18,11 +18,6 @@
 # Alternative wedding-dance URL (planned SEO-friendly variant)
 /wedding-dance-lessons-broward /wedding-dance-lessons.html 301
 
-# Optional: pretty URLs (no .html extension) → canonical pages
-# (Cloudflare Pages handles this automatically by default; explicit fallback)
-/schedule         /schedule.html         301
-/pricing          /pricing.html          301
-/private-lessons  /private-lessons.html  301
-/wedding-dance-lessons /wedding-dance-lessons.html 301
-/about            /about.html            301
-/contact          /contact.html          301
+# Pretty URLs (no .html extension) are handled automatically by Cloudflare Pages.
+# Do NOT add /foo → /foo.html rules here — Cloudflare also auto-redirects
+# /foo.html → /foo, which would create an infinite redirect loop.
