@@ -29,6 +29,7 @@ jobs:
         with:
           base-url-path: 'https://fajardoelite.com/' # IMPORTANT: REPLACE THIS
           path-to-root: '.' # Or your Webflow export folder if it's not root
+          drop-html-extension: true
 
       - name: Commit and Push Sitemap
         uses: EndBug/add-and-commit@v9
