@@ -11,7 +11,6 @@
 
 # SEO target URLs that don't have dedicated pages yet — route to schedule
 # (302 because we plan to build these as money pages in Phase 2)
-/salsa-classes-broward         /schedule.html              302
 /bachata-classes-davie         /schedule.html              302
 /ballroom-dance-classes-davie  /schedule.html              302
 
