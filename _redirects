@@ -2,8 +2,8 @@
 # Format: <source> <destination> <status>
 
 # Promo consolidation — collapse parallel offer pages onto /pricing
-/intro-offer.html         /pricing.html       301
-/holiday-sales-2025.html  /pricing.html       301
+/intro-offer.html         /pricing       301
+/holiday-sales-2025.html  /pricing       301
 
 # Webflow artifacts — never linked anywhere
 /static-template-slug-1748802036035.html  /  301
@@ -11,11 +11,12 @@
 
 # SEO target URLs that don't have dedicated pages yet — route to schedule
 # (302 because we plan to build these as money pages in Phase 2)
-/bachata-classes-davie         /schedule.html              302
-/ballroom-dance-classes-davie  /schedule.html              302
+/salsa-classes-broward         /schedule              302
+/bachata-classes-davie         /schedule              302
+/ballroom-dance-classes-davie  /schedule              302
 
 # Alternative wedding-dance URL (planned SEO-friendly variant)
-/wedding-dance-lessons-broward /wedding-dance-lessons.html 301
+/wedding-dance-lessons-broward /wedding-dance-lessons 301
 
 # Pretty URLs (no .html extension) are handled automatically by Cloudflare Pages.
 # Do NOT add /foo → /foo.html rules here — Cloudflare also auto-redirects
