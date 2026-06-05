@@ -89,10 +89,19 @@
     else mq.addListener(onChange); // older Safari
   }
 
+  // ---- Copyright Year ----
+  function initCopyrightYear() {
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  }
+
   // ---- Init ----
   function init() {
     initAnnouncement();
     initMobileNav();
+    initCopyrightYear();
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
