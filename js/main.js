@@ -97,11 +97,30 @@
     }
   }
 
+  // ---- Contact Form Verification ----
+  function initContactForm() {
+    const form = document.querySelector('.contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+      // If g-recaptcha is present on the page, check its response
+      const recaptchaEl = form.querySelector('.g-recaptcha');
+      if (recaptchaEl && typeof grecaptcha !== 'undefined') {
+        const response = grecaptcha.getResponse();
+        if (response.length === 0) {
+          e.preventDefault();
+          alert('Please complete the reCAPTCHA to send your message.');
+        }
+      }
+    });
+  }
+
   // ---- Init ----
   function init() {
     initAnnouncement();
     initMobileNav();
     initCopyrightYear();
+    initContactForm();
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
