@@ -103,6 +103,16 @@
 
     <section class="schedule" data-active-filter="all">
       <div class="container">
+        
+        <!-- Temporary Schedule Alert -->
+        <div style="background: rgba(155, 44, 44, 0.08); border: 1px solid rgba(155, 44, 44, 0.3); border-left: 4px solid #9b2c2c; border-radius: var(--radius-md); padding: var(--space-4) var(--space-5); margin-bottom: var(--space-6);">
+          <h2 style="font-size: var(--text-base); font-weight: 700; color: #9b2c2c; margin: 0 0 var(--space-1); text-transform: uppercase; letter-spacing: 0.05em;">Amended Schedule Tonight! (Wednesday 7/1/2026)</h2>
+          <p style="font-size: var(--text-sm); margin: 0; color: var(--color-text-muted);">
+            <strong>NOTE: Group class tonight will be at 7 PM!</strong>
+            <br>6:00 PM Zumba &middot; 7:00 PM Salsa on 1 (All Levels) &middot; 8:00 PM Privates only &middot; 9:00 PM Teams.
+          </p>
+        </div>
+
         <div class="schedule-grid">
 
           <div class="day-column" data-day="monday">
@@ -134,16 +144,29 @@
           </div>
 
           <div class="day-column" data-day="wednesday">
-            <h2 class="day-header">Wednesday</h2>
+            <h2 class="day-header" style="background: #9b2c2c; position: relative;">
+              Wednesday
+              <span style="display: block; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; color: var(--color-gold); margin-top: 2px;">AMENDED 7/1</span>
+            </h2>
+            <div class="class-card" data-style="latin" style="background: var(--color-bg-elev);">
+              <span class="class-time">6:00 PM</span>
+              <h3 class="class-name">Zumba</h3>
+              <span class="class-level">Special Class</span>
+            </div>
             <a href="/pricing" class="class-card" data-style="salsa">
-              <span class="class-time">7:00 – 8:00 PM</span>
-              <h3 class="class-name">Salsa On 1</h3>
-              <span class="class-level">Adv. Beg. Lvl 2 &amp; 3</span>
-            </a>
-            <a href="/pricing" class="class-card" data-style="salsa">
-              <span class="class-time">8:00 – 9:00 PM</span>
+              <span class="class-time">7:00 PM</span>
               <h3 class="class-name">Salsa On 1</h3>
               <span class="class-level">All Levels</span>
+            </a>
+            <div class="class-card class-card--ghost" data-style="practice">
+              <span class="class-time">8:00 PM</span>
+              <h3 class="class-name">Privates Only</h3>
+              <span class="class-level">No Group Class</span>
+            </div>
+            <a href="/pricing" class="class-card" data-style="salsa" data-team="true">
+              <span class="class-time">9:00 PM</span>
+              <h3 class="class-name">Teams <span class="team-mark" aria-label="Team class">★</span></h3>
+              <span class="class-level">Performance Teams</span>
             </a>
           </div>
 
