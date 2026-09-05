@@ -8,31 +8,33 @@
   // Loads content from /content/announcement.json. Renders only if enabled and
   // not dismissed within the last 7 days.
 
-  const DISMISS_KEY = 'fe_announcement_dismissed_at';
+  const DISMISS_KEY_PREFIX = 'fe_announcement_dismissed_';
   const DISMISS_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 
-  function isDismissed() {
+  function isDismissed(id) {
     try {
-      const ts = parseInt(localStorage.getItem(DISMISS_KEY), 10);
+      const ts = parseInt(localStorage.getItem(DISMISS_KEY_PREFIX + id), 10);
       if (!ts) return false;
       return Date.now() - ts < DISMISS_TTL_MS;
     } catch (_) { return false; }
   }
 
-  function setDismissed() {
-    try { localStorage.setItem(DISMISS_KEY, String(Date.now())); } catch (_) {}
+  function setDismissed(id) {
+    try { localStorage.setItem(DISMISS_KEY_PREFIX + id, String(Date.now())); } catch (_) {}
   }
 
   async function initAnnouncement() {
     const bar = document.getElementById('announcement-bar');
     if (!bar) return;
-    if (isDismissed()) { bar.remove(); return; }
 
     try {
       const res = await fetch('/content/announcement.json', { cache: 'no-cache' });
       if (!res.ok) { bar.remove(); return; }
       const data = await res.json();
       if (!data || !data.enabled || !data.text) { bar.remove(); return; }
+
+      const announcementId = data.id || 'default';
+      if (isDismissed(announcementId)) { bar.remove(); return; }
 
       const link = bar.querySelector('[data-announcement-link]');
       const text = bar.querySelector('[data-announcement-text]');
@@ -45,7 +47,7 @@
       const dismiss = bar.querySelector('[data-announcement-dismiss]');
       if (dismiss) {
         dismiss.addEventListener('click', () => {
-          setDismissed();
+          setDismissed(announcementId);
           bar.remove();
         });
       }

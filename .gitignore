@@ -9,4 +9,5 @@
 /todo/
 /plans/
 .claude/
-
+client_secret*.json
+token*.json
